@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1-2
+      author: SuranovAN
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  value: 0
+              - column:
+                  name: name
+                  value: "testUser"
+              - column:
+                  name: surname
+                  value: "testSurname"
+              - column:
+                  name: patronymic
+                  value: "testPatronymic"
+              - column:
+                  name: creationdate
+                  value: "testDate"

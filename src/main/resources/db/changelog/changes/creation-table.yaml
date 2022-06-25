@@ -1,0 +1,37 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1-1
+      author: SuranovAN
+      changes:
+        - createTable:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  type: serial
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar
+                  constraints:
+                    nullable: false
+              - column:
+                  name: surname
+                  type: varchar
+                  constraints:
+                    nullable: false
+              - column:
+                  name: patronymic
+                  type: varchar
+                  constraints:
+                    nullable: false
+              - column:
+                  name: creationdate
+                  type: varchar
+                  constraints:
+                    nullable: false
+
+
